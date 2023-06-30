@@ -2,7 +2,16 @@
     width: 140px;
     height: 140px;
 }
-.imagencuerpo{
-    width: 400px;
-    height: 400px;
-}
+
+.contenido {
+    margin: 0% 20%;
+    border-left: 1px solid #2719f3e5;
+    border-right: 1px solid #1d11c9d3;
+    box-shadow: rgba(221, 32, 196, 0.685) 0px 48px 100px 0px;
+  }
+  .fomularioespacio {
+    padding: 10px 20px;
+  }
+  .fomularioespacio.label{
+    margin-right: 10px;
+  }

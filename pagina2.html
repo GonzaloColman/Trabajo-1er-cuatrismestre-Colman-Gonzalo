@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>la tentacion del azucar</title>
+    <title>la tentacion del azucar</title> <!--titulo de la pagina web-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,41 +10,67 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script type="text/javascript" src="./pagina2.js"></script>
-    <link rel="stylesheet" href="/Trabajo-1er-cuatrismestre-Colman-Gonzalo/pagina2.css">
+    <script type="text/javascript" src="./pagina2.js"></script><!--agrego pagina del js-->
+    <link rel="stylesheet" href="/Trabajo-1er-cuatrismestre-Colman-Gonzalo/pagina2.css"><!-- agrego pagina del css-->
 </head>
 
 <body>
-    <div>
+    <div><!--pagina entera-->
         <div class="p-3 mb-2 bg-primary text-white text-center"><!--encabezado-->
             <h1> La Tentación del azucar <img class="imagen img-fluid" src="portada.png" alt=""></h1>
         </div>
-        <div class="d-flex flex-column contenido"><!--cuerpo de pagina-->
-            <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./bombones.png" class="d-block w-100" alt="Beretta">
+        <div><!--cuerpo de pagina-->
+            <div class="d-flex flex-column contenido">
+                <div id="carrusel" class="carousel slide carousel-fade carousel-dark">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./bombones.png" class="d-block w-100" alt="bombones">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./torta de crema.png" class="d-block w-100" alt="torta de crema">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./torta chocolate.png" class="d-block w-100" alt="torta de crema">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./torta de crema.png" class="d-block w-100" alt="Beretta">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
-            </div>
-        </div>
-        <div><!--pie de pagina-->
+                <form><!--aqui va el formulario-->
+                    <div class="mb-3 fomularioespacio">
+                        <label>Nombre</label>
+                        <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
+                        <label for="exampleFormControlInput1" class="form-label">Agregue su email para resivir
+                            respuesta</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nombre@ejemplo.com">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
+
+                    </div>
+            </div>
+            </form>
         </div>
     </div>
+    <div><!--pie de pagina-->
+
+    </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
