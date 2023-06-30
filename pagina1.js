@@ -1,6 +1,6 @@
 function nota(){
    
-    document.createElement("p");
+    document.createElement(div1);
 }
 
 function quitar(){
