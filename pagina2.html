@@ -15,53 +15,61 @@
 </head>
 
 <body>
-    <div><!--pagina entera-->
-        <div class="p-3 mb-2 bg-primary text-white text-center"><!--encabezado-->
-            <h1> La Tentación del azucar <img class="imagen img-fluid" src="portada.png" alt=""></h1>
-        </div>
-        <div><!--cuerpo de pagina-->
-            <div class="d-flex flex-column contenido">
-                <div id="carrusel" class="carousel slide carousel-fade carousel-dark">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./bombones.png" class="d-block w-100" alt="bombones">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./torta de crema.png" class="d-block w-100" alt="torta de crema">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./torta chocolate.png" class="d-block w-100" alt="torta de crema">
-                        </div>
+
+    <div class="p-3 mb-2 bg-primary text-white text-center"><!--encabezado-->
+        <h1> La Tentación del azucar <img class="imagen img-fluid" src="portada.png" alt=""></h1>
+    </div>
+    <div><!--cuerpo de pagina-->
+        <div class="d-flex flex-column contenido">
+            <div id="carrusel" class="carousel slide carousel-fade carousel-dark">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./bombones.png" class="d-block w-100" alt="bombones">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Próximo</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="./torta de crema.png" class="d-block w-100" alt="torta de crema">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./torta chocolate.png" class="d-block w-100" alt="torta de crema">
+                    </div>
                 </div>
-                <form><!--aqui va el formulario-->
-                    <div class="mb-3 fomularioespacio">
-                        <label>Nombre</label>
-                        <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
-                        <label for="exampleFormControlInput1" class="form-label">Agregue su email para resivir
-                            respuesta</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nombre@ejemplo.com">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-
-                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
+            <form><!--aqui va el formulario-->
+                <div class="mb-3 fomularioespacio">
+                    <label>Nombre</label>
+                    <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
+                    <label for="exampleFormControlInput1" class="form-label">Agregue su email para resivir
+                        respuesta</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="nombre@ejemplo.com">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion del pedido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
             </form>
-        </div>
-    </div>
-    <div><!--pie de pagina-->
+            <div class="d-grid gap-2 d-md-block"><!--boton para enviar archivo-->
+            <button type="button" class="btn btn-success">enviar mensaje</button>
+            <button type="button" class="btn btn-secondary">cambiar al to do list</button>
 
+
+        </div>
+        </div>
+        
     </div>
+    <div class="finpagina"><!--pie de pagina-->
+        <div class="container">
+            <p class="float-start"> contacto telefonico: 2284-****** </p>
+            <p class="float-end">correo:<a class="link-opacity-50-hover"
+                    href="https://www.instagram.com/la_tentacion_del_azucar/">latentacion@gmail.com</a></p>
+            <!--agrego link -->
+        </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

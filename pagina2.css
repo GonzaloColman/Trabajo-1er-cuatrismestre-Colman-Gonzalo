@@ -3,15 +3,22 @@
     height: 140px;
 }
 
-.contenido {
+.contenido {/*recuadro de las fotos*/
     margin: 0% 20%;
     border-left: 1px solid #2719f3e5;
     border-right: 1px solid #1d11c9d3;
     box-shadow: rgba(221, 32, 196, 0.685) 0px 48px 100px 0px;
-  }
-  .fomularioespacio {
+}
+
+.fomularioespacio {/*formulario la distancia que tiene entre ellos arriba y abajo y a los costados*/
     padding: 10px 20px;
-  }
-  .fomularioespacio.label{
+}
+
+.fomularioespacio.label {
     margin-right: 10px;
-  }
+}
+
+.finpagina {
+    background-color: rgba(60, 173, 107, 0.733);
+    padding: 40px 20px;
+}
