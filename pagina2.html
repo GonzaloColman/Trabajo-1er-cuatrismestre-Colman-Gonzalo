@@ -19,7 +19,7 @@
     <div class="p-3 mb-2 bg-primary text-white text-center"><!--encabezado-->
         <h1> La Tentación del azucar <img class="imagen img-fluid" src="portada.png" alt=""></h1>
     </div>
-    <div><!--cuerpo de pagina-->
+    <div class="fondo"><!--cuerpo de pagina-->
         <div class="d-flex flex-column contenido">
             <div id="carrusel" class="carousel slide carousel-fade carousel-dark">
                 <div class="carousel-inner">
@@ -49,19 +49,17 @@
                     <label for="exampleFormControlInput1" class="form-label">Agregue su email para resivir
                         respuesta</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="nombre@ejemplo.com">
+                        placeholder="nombre@ejemplo.com"><!--texto que desaparece al escribir-->
                     <label for="exampleFormControlTextarea1" class="form-label">Descripcion del pedido</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </form>
-            <div class="d-grid gap-2 d-md-block"><!--boton para enviar archivo-->
-            <button type="button" class="btn btn-success">enviar mensaje</button>
-            <button type="button" class="btn btn-secondary">cambiar al to do list</button>
-
-
+            <div class="d-grid gap-2 d-md-block botonera"><!--boton para enviar archivo-->
+                <button type="button" class="btn btn-success">enviar mensaje</button>
+                <a class="btn btn-secondary" href="./pagina1.html" role="button">cambiar al to do list</a>
+                <!--botorn que envia a la siguiente pagina-->
+            </div>
         </div>
-        </div>
-        
     </div>
     <div class="finpagina"><!--pie de pagina-->
         <div class="container">
