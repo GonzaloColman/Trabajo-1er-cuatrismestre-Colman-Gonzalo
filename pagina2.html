@@ -10,8 +10,10 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script type="text/javascript" src="./pagina2.js"></script><!--agrego pagina del js-->
-    <link rel="stylesheet" href="/Trabajo-1er-cuatrismestre-Colman-Gonzalo/pagina2.css"><!-- agrego pagina del css-->
+    <!--agrego pagina del js-->
+    <script type="text/javascript" src="./pagina2.js"></script>
+    <!-- agrego pagina del css-->
+    <link rel="stylesheet" href="/Trabajo-1er-cuatrismestre-Colman-Gonzalo/pagina2.css">
 </head>
 
 <body>
@@ -19,11 +21,11 @@
     <header><!--barra de busqueda -->
         <nav>
             <ul>
+                <li><a href="#">Crear perfil</a></l>
+                <li><a href="#">Iniciar sesión</a></li>
                 <li><a href="./pagina1.html">Inicio</a></li>
-                <li><a href="#">Tutoriales</a></li>
-                <li><a href="#">Cursos</a></l>
-                <li><a href="https://www.facebook.com/lapasteleriadeliliana">facebook</a></li>
-                <li><a href="https://www.instagram.com/la_tentacion_del_azucar/">instagram</a></li>
+                <li><a href="https://www.facebook.com/lapasteleriadeliliana">Facebook</a></li>
+                <li><a href="https://www.instagram.com/la_tentacion_del_azucar/">Instagram</a></li>
             </ul>
         </nav>
     </header>
@@ -78,6 +80,10 @@
                     <label for="texto" class="form-label">Descripcion del pedido</label>
                     <!--lugar donde escribir el texto del pedido-->
                     <textarea class="form-control" id="texto" rows="3"></textarea>
+                    <small id="error-texto" class="mensaje-error"></small>
+                    <label class="form-label">Recibir novedades:</label>
+                    <input class="form-check-input mt-0" type="checkbox" value="" id="notificaciones"
+                        aria-label="Text input with checkbox" />
                 </div>
             </form>
             <!--agregamos botones para enviar la informacion y cambiar de pagina-->

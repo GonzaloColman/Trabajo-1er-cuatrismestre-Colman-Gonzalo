@@ -30,10 +30,11 @@ const enviarFormulario = () => {
     else if (nombreInput.value.trim().length < 5) {
         // error de cantidad de letra 
         document.getElementById("error-nombre").innerHTML = "el nombre debe tener 5 caracteres";
-
+        let formularioCorrecto = false;
     }
     else {
         document.getElementById("error-nombre").innerHTML = "";
+        let formularioCorrecto = true;
     }
 
     const correoInput = document.getElementById("correo");
@@ -51,16 +52,32 @@ const enviarFormulario = () => {
     const notificaciones = document.getElementById("notificaciones");
     if (formularioCorrecto) {
         console.log("Nombre:", nombreInput.value);
-        console.log("Email:", emailInput.value);
+        console.log("Correo:", correoInput.value);
         console.log("Recibe Notificaciones:", notificaciones.checked);
     } else {
-        console.log("Formulario incorrecto")
+        console.log("Formulario incorrecto");
     }
 }
+const descripcion = () => {
+    let textoCorrecto = true;
+    const textoInput = document.getElementById("texto");
+    if (textoInput.value.trim() == "") {
+        //error de escritura
+        document.getElementById("error-texto").innerHTML = "el texto es requerido";
+        let textoCorrecto = false;
+    }
+    else {
+        document.getElementById("error-texto").innerHTML = "";
+        let textoCorrecto = true;
+        console.log("texto:", textoInput.value);
+    }
+}
+
 const inicializarjs = () => {
     const button = document.getElementById("enviar");
     button.addEventListener("click", function (e) {
         enviarFormulario();
+        descripcion();
     })
 
     document.getElementById("nombre").addEventListener("blur", function (e) {
