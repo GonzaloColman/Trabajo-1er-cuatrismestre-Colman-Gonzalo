@@ -36,11 +36,6 @@ h1 {
     margin-right: 10px;
 }
 
-.finpagina {
-    background-color: rgba(60, 173, 107, 0.733);
-    padding: 40px 20px;
-}
-
 .botonera {
     padding: 10px 20px;
 }
@@ -82,4 +77,9 @@ nav ul li a {
 
 nav ul li:hover {
     background: #eca023;
+}
+
+.finpagina {
+    background-color: rgba(60, 173, 107, 0.733);
+    padding: 40px 20px;
 }

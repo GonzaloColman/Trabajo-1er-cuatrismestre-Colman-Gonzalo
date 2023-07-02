@@ -53,4 +53,7 @@ nav ul li:hover {
     background: #eca023;
 }
 
-.pie {}
+.finpagina {
+    background-color: rgba(60, 173, 107, 0.733);
+    padding: 40px 30px;
+}
