@@ -15,12 +15,16 @@
 </head>
 
 <body>
+    <!--inicio de pagina-->
     <div class="row"><!--selecciono la clase row del bootstrap -->
         <header><!--titulo del encabezado-->
             <h1 class="text-center text-bg-warning p-3">
                 Lista de tarea diaria
             </h1>
         </header>
+    </div>
+    <!--cuerpo de pagina-->
+    <div>
         <div>
             <button type="button" class="btn btn-success">
                 Nueva tarea
@@ -32,6 +36,7 @@
             <!--selecciono del bootstrap  una targeta para las tareas y hago que las columnas se junten en horisonla-->
             <div class="card-header">
                 tarea del dia
+                <button id="enviar" type="button" class="btn btn-danger">eliminar tarea</button>
             </div><!--titulo de la targeta-->
             <div class="card-body">
                 <p class="card-text">
@@ -39,8 +44,20 @@
                 </p><!--donde se escribe la targeta-->
             </div>
         </div1>
+        <!--agregamos botones para enviar la informacion y cambiar de pagina-->
+        <div class="d-grid gap-2 d-md-block botonera">
+            <!--boton para enviar archivo-->
+            
+            <a class="btn btn-secondary" href="./pagina2.html" role="button">cambiar a La tentacion del azucar</a>
+            <!--botorn que envia a la siguiente pagina-->
+        </div>
+    </div>
+    <!--pie de pagina-->
+    <div>
 
     </div>
+
+
     <footer>
         <!-- place footer here -->
     </footer>
