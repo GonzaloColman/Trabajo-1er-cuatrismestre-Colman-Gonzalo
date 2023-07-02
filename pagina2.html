@@ -19,8 +19,11 @@
     <div class="p-3 mb-2 bg-primary text-white text-center"><!--encabezado-->
         <h1> La Tentación del azucar <img class="imagen img-fluid" src="portada.png" alt=""></h1>
     </div>
-    <div class="fondo"><!--cuerpo de pagina-->
+    <!--cuerpo de pagina-->
+    <div class="fondo">
+        <!-- pocicion en la que aparece la informacion del cuepo de pagina-->
         <div class="d-flex flex-column contenido">
+            <!--agrego carrusel para cambiar las fotos-->
             <div id="carrusel" class="carousel slide carousel-fade carousel-dark">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -30,9 +33,10 @@
                         <img src="./torta de crema.png" class="d-block w-100" alt="torta de crema">
                     </div>
                     <div class="carousel-item">
-                        <img src="./torta chocolate.png" class="d-block w-100" alt="torta de crema">
+                        <img src="./torta chocolate.png" class="d-block w-100" alt="torta de crema de chocolate">
                     </div>
                 </div>
+                <!--agrego botonera para cambiar las fotos-->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
@@ -42,20 +46,33 @@
                     <span class="visually-hidden">Próximo</span>
                 </button>
             </div>
-            <form><!--aqui va el formulario-->
+            <!--a continuacion el formulario-->
+            <form>
+                <!--fotmato del formulario -->
                 <div class="mb-3 fomularioespacio">
-                    <label>Nombre</label>
-                    <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
-                    <label for="exampleFormControlInput1" class="form-label">Agregue su email para resivir
-                        respuesta</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="nombre@ejemplo.com"><!--texto que desaparece al escribir-->
-                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion del pedido</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <!--aparece nombre-->
+                    <label for="nombre">Nombre</label>
+                    <!--le continua un lugar donde escribir y un texto que desaparece -->
+                    <input id="nombre" class="form-control" type="text" placeholder="Escriba aqui su Nombre"
+                        aria-label="default input example">
+                    <!--mensaje de error-->
+                    <small id="error-nombre" class="mensaje-error"></small>
+                    <!--aparece un texto que dice que agregue un correo-->
+                    <label for="correo" class="form-label">Agregue su email para resivir respuesta</label>
+                    <!--le continua un lugar donde escribir el correo y un texto que desaparece -->
+                    <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+                    <!--mensaje de error-->
+                    <small id="error-correo" class="mensaje-error"></small>
+                    <!--aparece un texto-->
+                    <label for="texto" class="form-label">Descripcion del pedido</label>
+                    <!--lugar donde escribir el texto del pedido-->
+                    <textarea class="form-control" id="texto" rows="3"></textarea>
                 </div>
             </form>
-            <div class="d-grid gap-2 d-md-block botonera"><!--boton para enviar archivo-->
-                <button type="button" class="btn btn-success">enviar mensaje</button>
+            <!--agregamos botones para enviar la informacion y cambiar de pagina-->
+            <div class="d-grid gap-2 d-md-block botonera">
+                <!--boton para enviar archivo-->
+                <button id="enviar" type="button" class="btn btn-success">enviar mensaje</button>
                 <a class="btn btn-secondary" href="./pagina1.html" role="button">cambiar al to do list</a>
                 <!--botorn que envia a la siguiente pagina-->
             </div>
