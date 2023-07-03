@@ -16,44 +16,53 @@
 
 <body>
     <!--inicio de pagina-->
-    <div class="row"><!--selecciono la clase row del bootstrap -->
-        <header><!--titulo del encabezado-->
-            <h1 class="text-center text-bg-warning p-3">
-                Lista de tarea diaria
-            </h1>
-        </header>
+    <header><!--barra de busqueda -->
+        <nav>
+            <ul>
+                <li><a href="./pagina3.html">Crear perfil</a></l>
+                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="./pagina1.html">Inicio</a></li>
+                <li><a href="https://www.facebook.com/lapasteleriadeliliana">Facebook</a></li>
+                <li><a href="https://www.instagram.com/la_tentacion_del_azucar/">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="titulo text-white text-center">
+        <h1> La Tentación del azucar <img class="imagen img-fluid" src="portada.png" alt=""></h1>
+        <h2 class="titulo text-white text-center">Lista de tarea diaria</h2>
     </div>
     <!--cuerpo de pagina-->
-    <div>
-        <div>
-            <button type="button" class="btn btn-success">
-                Nueva tarea
-            </button>
-
-        </div>
-        <!--targetas de las tarea diarias-->
-        <div1 class="card text-bg-info mb-3 col-md-4" style="max-width: 18rem;">
-            <!--selecciono del bootstrap  una targeta para las tareas y hago que las columnas se junten en horisonla-->
-            <div class="card-header">
-                tarea del dia
-                <button id="enviar" type="button" class="btn btn-danger">eliminar tarea</button>
-            </div><!--titulo de la targeta-->
-            <div class="card-body">
-                <p class="card-text">
-                    escribe aqui
-                </p><!--donde se escribe la targeta-->
+    <div class=" fondo d-flex flex-column">
+          <!-- aqui va el contenido -->
+          <div class="d-flex flex-column contenido">
+            <div class="contenido-tabla">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Identificador</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
+                    <th>Accion</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+              </table>
             </div>
-        </div1>
-        <!--agregamos botones para enviar la informacion y cambiar de pagina-->
-        <div class="d-grid gap-2 d-md-block botonera">
-            <!--boton para enviar archivo-->
-            
-            <a class="btn btn-secondary" href="./pagina2.html" role="button">cambiar a La tentacion del azucar</a>
-            <!--botorn que envia a la siguiente pagina-->
-        </div>
-    </div>
+            <div class="d-flex flex-row justify-content-end botonera">
+              <button id="agregarTarea" type="button" class="btn btn-outline-success">Agregar Tarea</button>
+            </div>
+          </div>
+        </v>
+      </div>
     <!--pie de pagina-->
     <div>
+        <div class="finpagina">
+            <p class="float-start"> contacto telefonico: 2284-****** </p>
+            <p class="float-end">correo:<a class="link-opacity-50-hover"
+                    href="https://www.instagram.com/la_tentacion_del_azucar/">latentacion@gmail.com</a></p>
+            <!--agrego link -->
+        </div>
 
     </div>
 
